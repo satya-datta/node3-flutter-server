@@ -1,11 +1,10 @@
 const otpgenerator = require("otp-generator");
 const crypto = require("crypto");
-
-const twilio = require("twilio");
 require('dotenv').config();
-const key = process.env.OTP_SECRET_KEY; 
-const accountSid = process.env.TWILIO_ACCOUNT_STRING;
+const twilio = require("twilio");
 
+const key = process.env.OTP_SECRET_KEY; 
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken =process.env.TWILIO_AUTH_TOKEN; // Replace with your Auth Token
 const twilioPhoneNumber = process.env.TWILIO_MBL_NUMBER; // Replace with your Twilio phone number
 
