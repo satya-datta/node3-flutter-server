@@ -5,7 +5,7 @@ const twilio = require("twilio");
 require('dotenv').config();
 const key = process.env.OTP_SECRET_KEY; 
 const accountSid = process.env.TWILIO_ACCOUNT_STRING;
-// const accountSid = 'AC51a87f1b0173237bc776ebc7086efce4'; // Replace with your Account SID
+
 const authToken =process.env.TWILIO_AUTH_TOKEN; // Replace with your Auth Token
 const twilioPhoneNumber = process.env.TWILIO_MBL_NUMBER; // Replace with your Twilio phone number
 
